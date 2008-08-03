@@ -1,0 +1,7 @@
+To use with hugin, set the 'Autopano-SIFT:' preference to:
+
+  autopano-c-complete.sh
+
+..and the 'Arguments:' preference to:
+
+  --output %o --points %p %i
