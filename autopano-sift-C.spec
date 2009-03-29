@@ -1,7 +1,7 @@
 Summary: SIFT feature detection
 Name: autopano-sift-C
 Version: 2.4.1
-Release: 0.2.20080220svn%{?dist}
+Release: 0.3.20080220svn%{?dist}
 License: GPLv2
 Group: Applications/Multimedia
 # The source for this package was pulled from upstream's vcs.  Use the
@@ -48,6 +48,9 @@ rm -rf %{buildroot}
 %{_mandir}/man7/autopano-sift-c.7.gz
 
 %changelog
+* Sun Mar 29 2009 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info> - 2.4.1-0.3.20080220svn
+- rebuild for new F11 features
+
 * Sun Aug 03 2008 Thorsten Leemhuis <fedora [AT] leemhuis [DOT] info - 2.4.1-0.2.20080220svn
 - rebuild
 
