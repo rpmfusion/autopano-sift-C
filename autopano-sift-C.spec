@@ -1,7 +1,7 @@
 Summary: SIFT feature detection
 Name: autopano-sift-C
 Version: 2.5.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPLv2
 Group: Applications/Multimedia
 Source: http://downloads.sourceforge.net/hugin/%{name}-%{version}.tar.gz
@@ -18,6 +18,7 @@ See README.fedora for hugin configuration instructions.
 
 %prep
 %setup -q
+sed -i 's/set(all_libs /set(all_libs m /' CMakeLists.txt
 
 %build
 cp -a %{SOURCE1} README.fedora
@@ -46,6 +47,9 @@ rm -rf %{buildroot}
 %{_mandir}/man7/autopano-sift-c.7.gz
 
 %changelog
+* Wed May 12 2010 Bruno Postle <bruno@postle.net> - 2.5.1-2
+- Workaround implicit DSO linking error with libm
+
 * Sun May 02 2010 Bruno Postle <bruno@postle.net> - 2.5.1-1
 - 2.5.1 release
 
