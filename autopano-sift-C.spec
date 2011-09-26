@@ -1,7 +1,7 @@
 Summary: SIFT feature detection
 Name: autopano-sift-C
 Version: 2.5.1
-Release: 3%{?dist}
+Release: 4%{?dist}
 License: GPLv2
 Group: Applications/Multimedia
 Source: http://downloads.sourceforge.net/hugin/%{name}-%{version}.tar.gz
@@ -47,6 +47,9 @@ rm -rf %{buildroot}
 %{_mandir}/man7/autopano-sift-c.7.gz
 
 %changelog
+* Mon Sep 26 2010 Bruno Postle <bruno@postle.net> - 2.5.1-4
+- Bump for rebuild against current libpano13
+
 * Wed May 12 2010 Bruno Postle <bruno@postle.net> - 2.5.1-3
 - Bump version as -r autopano-sift-C-2_5_1-2_fc14 is messed-up on the server
 
