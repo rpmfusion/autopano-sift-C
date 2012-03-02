@@ -1,7 +1,7 @@
 Summary: SIFT feature detection
 Name: autopano-sift-C
 Version: 2.5.1
-Release: 5%{?dist}
+Release: 6%{?dist}
 License: GPLv2
 Group: Applications/Multimedia
 Source: http://downloads.sourceforge.net/hugin/%{name}-%{version}.tar.gz
@@ -47,6 +47,9 @@ rm -rf %{buildroot}
 %{_mandir}/man7/autopano-sift-c.7.gz
 
 %changelog
+* Fri Mar 02 2012 Nicolas Chauvet <kwizart@gmail.com> - 2.5.1-6
+- Rebuilt for c++ ABI breakage
+
 * Wed Feb 08 2012 Nicolas Chauvet <kwizart@gmail.com> - 2.5.1-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
 
